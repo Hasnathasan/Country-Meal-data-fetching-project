@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,27 +10,30 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-green-200">
     <div style="height: 100px;" class="flex justify-center gap-x-10 items-center">
-        <input id="search-input" type="text" placeholder="Type here" class="input input-bordered input-accent w-full max-w-xs" />
+        <input id="search-input" type="text" placeholder="Type here"
+            class="input input-bordered input-accent w-full max-w-xs" />
         <button id="search-btn" onclick="searchOption()" class="btn btn-primary">Button</button>
-        <input type="checkbox" id="my-modal" class="modal-toggle"/>
+        <input type="checkbox" id="my-modal" class="modal-toggle" />
         <div class="modal">
-        <div class="modal-box">
-            <h3 id="modalTitle" class="font-bold text-lg"></h3>
-            <p id="modalText" class="py-4"></p>
-            <div class="modal-action">
-            <label for="my-modal" class="btn">Close</label>
+            <div class="modal-box">
+                <h3 id="modalTitle" class="font-bold text-lg"></h3>
+                <p id="modalText" class="py-4"></p>
+                <div class="modal-action">
+                    <label for="my-modal" class="btn">Close</label>
+                </div>
             </div>
-        </div>
         </div>
     </div>
     <div class="container mx-auto md:grid-cols-3 px-3.5 grid grid-cols-1 gap-y-20" id="meal-group">
-        
+
     </div>
-    
+
 
 
     <script src="js/meal.js"></script>
 </body>
+
 </html>
